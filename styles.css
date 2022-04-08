@@ -1,115 +1,7 @@
 body {
-  margin: 0;
-  height: 100vh;
-  width: 100vw;
-  font-family: "Merriweather", serif;
-  overflow-x: hidden;
+  font-family: "Montserrat";
 }
-.navbar {
-  background-color: black;
-  height: 5rem;
-}
-.navbar-brand {
-  font-size: 2rem;
-}
-.justify-content-end {
-  margin-right: 2rem;
-}
-.navbar-toggler-icon {
-  margin-right: 2rem;
-}
-button {
-  position: absolute;
-  right: 2rem;
-  bottom: 5rem;
-  padding: 1em 2em;
-  outline: none;
-  border: 1px solid #303030;
-  background: #212121;
-  color: white;
-  font-family: "Sacramento", cursive;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 17px;
-  overflow: hidden;
-  transition: 0.2s;
-  border-radius: 20px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-button:hover {
-  box-shadow: 0 0 10px #ae00ff, 0 0 25px #001eff, 0 0 50px #ae00ff;
-  transition-delay: 0.6s;
-}
-
-button span {
-  position: absolute;
-}
-
-button span:nth-child(1) {
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, #ae00ff);
-}
-button:hover span:nth-child(1) {
-  left: 100%;
-  transition: 0.7s;
-}
-button span:nth-child(3) {
-  bottom: 0;
-  right: -100%;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, #001eff);
-}
-button:hover span:nth-child(3) {
-  right: 100%;
-  transition: 0.7s;
-  transition-delay: 0.35s;
-}
-button span:nth-child(2) {
-  top: -100%;
-  right: 0;
-  width: 2px;
-  height: 100%;
-  background: linear-gradient(180deg, transparent, #ae00ff);
-}
-button:hover span:nth-child(2) {
-  top: 100%;
-  transition: 0.7s;
-  transition-delay: 0.17s;
-}
-button span:nth-child(4) {
-  bottom: -100%;
-  left: 0;
-  width: 2px;
-  height: 100%;
-  background: linear-gradient(360deg, transparent, #001eff);
-}
-button:hover span:nth-child(4) {
-  bottom: 100%;
-  transition: 0.7s;
-  transition-delay: 0.52s;
-}
-button:active {
-  background: #ae00af;
-  background: linear-gradient(to top right, #ae00af, #001eff);
-  color: #bfbfbf;
-  box-shadow: 0 0 8px #ae00ff, 0 0 8px #001eff, 0 0 8px #ae00ff;
-  transition: 0.1s;
-}
-button:active
-  span:nth-child(1)
-  span:nth-child(2)
-  span:nth-child(2)
-  span:nth-child(2) {
-  transition: none;
-  transition-delay: none;
-}
-.top-container {
+#title {
   background-color: blue;
   background: rgb(1, 23, 4);
   background: linear-gradient(
@@ -120,9 +12,9 @@ button:active
   );
   animation: gradientBG 15s ease infinite;
   background-size: 400% 400%;
-  height: 100%;
-  width: 100%;
-  padding-top: 5%;
+  height: 100vh;
+  width: 100vw;
+  color:white;
 }
 @keyframes gradientBG {
   0% {
@@ -137,142 +29,192 @@ button:active
     background-position: 0% 50%;
   }
 }
-.profile-pic {
-  position: absolute;
-  bottom: 35vh;
-  left: 5vw;
-  transition: all 0.3s ease-in-out;
+.container-fluid {
+  padding: 3% 15%;
 }
-.profile-pic:hover {
-  transform: scale(1.3);
+h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 3rem;
+  line-height: 1.5;
 }
-.LinkedIn {
-  position: absolute;
-  bottom: 35vh;
-  left: 65vw;
-  transition: all 0.3s ease-in-out;
+h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 3rem;
+  line-height: 1.5;
 }
-.LinkedIn:hover {
-  transform: scale(1.3);
+h3 {
+  font-family: "Ubuntu";
 }
-.Github {
-  position: absolute;
-  bottom: 35vh;
-  left: 35vw;
-  transition: all 0.3s ease-in-out;
+p {
+  color: rgb(109, 107, 107);
 }
-.Github:hover {
-  transform: scale(1.3);
-}
-.name {
-  color: white;
-  position: absolute;
-  bottom: 3rem;
-  left: 2rem;
-  font-size: 5rem;
-  font-family: "Sacramento", cursive;
-}
-.summary {
-  color: white;
-  position: absolute;
-  bottom: 1rem;
-  left: 2rem;
-  font-size: 2vw;
-  font-family: "Montserrat", sans-serif;
-}
-.middle-container {
-  background: rgb(164, 90, 11);
+  /*Navigation Bar*/
+  .navbar {
+    padding: 0 0 4.5rem;
+  }
+  .nav-item {
+    padding: 0 2rem;
+  }
+  .nav-link {
+    font-size: 1.2rem;
+    font-weight: "Montserrat-Light";
+  }
+  .navbar-brand {
+    font-family: "Ubuntu";
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  /* Download Buttons*/
+  .download-button {
+    margin: 5% 3% 5% 0%;
+  }
+  /* Dog Phone */
+  .dog-phone {
+    width: 60%;
+    transform: rotate(25deg);
+  }
+  /* Feature Section */
+
+  #features {
+    padding : 7% 15%;
+    background-color: azure;
+    position: relative;
+  }
+  .feature-box {
+    text-align: center;
+    padding: 5%;
+  }
+  .icons {
+    padding-bottom: 1rem;
+    color: #ef8172;
+  }
+  .icons:hover {
+    color: #ff4c68;
+  }
+  /* Testimonial Section */
+  #testimonials {
+    text-align: center;
+    color: white;
+    background-color: blue;
+  background: rgb(1, 23, 4);
   background: linear-gradient(
     90deg,
-    rgba(164, 90, 11, 1) 0%,
-    rgba(182, 141, 17, 1) 44%,
-    rgba(14, 96, 11, 1) 100%
+    rgba(1, 23, 4, 1) 0%,
+    rgb(3, 49, 10) 49%,
+    rgb(18, 3, 59) 100%
   );
   animation: gradientBG 15s ease infinite;
   background-size: 400% 400%;
-}
-.projects {
-  margin-top: 0;
-}
-.nbody {
-  float: left;
-  margin-right: 5%;
-  height: 12rem;
-  weight: 12rem;
-  transition: all 0.3s ease-in-out;
-}
-.nbody:hover {
-  transform: scale(1.1);
-}
-.guitar {
-  float: right;
-  margin-left: 5%;
-  height: 12rem;
-  weight: 12rem;
-  transition: all 0.3s ease-in-out;
-}
-.guitar:hover {
-  transform: scale(1.1);
-}
-.fibLFSR {
-  float: left;
-  margin-right: 5%;
-  height: 12rem;
-  weight: 12rem;
-  transition: all 0.3s ease-in-out;
-}
-.fibLFSR:hover {
-  transform: scale(1.1);
-}
-.hangman {
-  float: right;
-  margin-left: 5%;
-  height: 12rem;
-  weight: 12rem;
-  transition: all 0.3s ease-in-out;
-}
-.hangman:hover {
-  transform: scale(1.1);
-}
-.triangle {
-  float: left;
-  margin-right: 5%;
-  height: 12rem;
-  weight: 12rem;
-  transition: all 0.3s ease-in-out;
-}
-.triangle:hover {
-  transform: scale(1.1);
-}
-.ants {
-  float: right;
-  margin-left: 5%;
-  height: 12rem;
-  weight: 12rem;
-  transition: all 0.3s ease-in-out;
-}
-.ants:hover {
-  transform: scale(1.1);
-}
-.skill-row {
-  width: 50%;
-  margin: 0px auto;
-  line-height: 2;
-}
-.bottom-container {
-  background-color: blue;
-  height: 100%;
-  width: 100%;
-}
-.contact {
-  background: rgb(153, 10, 141);
-  background: linear-gradient(
-    90deg,
-    rgb(23, 121, 201) 0%,
-    rgb(187, 29, 192) 44%,
-    rgb(197, 20, 168) 100%
-  );
-  animation: gradientBG 15s ease infinite;
-  background-size: 400% 400%;
-  color: white;
-}
+  height: 100vh;
+  width: 100vw;
+  color:white;
+  }
+  .carousel-item {
+    padding: 7% 15%;
+  }
+  .testimonial-image {
+    width: 15%;
+    
+  }
+  /* Press Section */
+  #press {
+    text-align: center;
+    background-color: #ff4c68;
+  }
+  .press-logo {
+    width: 15%;
+    margin: 2% 2% 10%;
+  }
+  /* Pricing Section */
+  #pricing {
+    padding: 5%;
+    text-align: center;
+  }
+  .pricing-column {
+    padding: 3% 2%;
+  }
+  #projects {
+    background-color: blue;
+    background: rgb(1, 23, 4);
+    background: linear-gradient(
+      90deg,
+      rgba(1, 23, 4, 1) 0%,
+      rgb(3, 49, 10) 49%,
+      rgb(18, 3, 59) 100%
+    );
+    animation: gradientBG 15s ease infinite;
+    background-size: 400% 400%;
+    color:white;
+  }
+  .projects {
+    margin-top: 0;
+  }
+  .nbody {
+    float: left;
+    margin-right: 5%;
+    height: 12rem;
+    weight: 12rem;
+    transition: all 0.3s ease-in-out;
+  }
+  .nbody:hover {
+    transform: scale(1.1);
+  }
+  .guitar {
+    float: right;
+    margin-left: 5%;
+    height: 12rem;
+    weight: 12rem;
+    transition: all 0.3s ease-in-out;
+  }
+  .guitar:hover {
+    transform: scale(1.1);
+  }
+  .fibLFSR {
+    float: left;
+    margin-right: 5%;
+    height: 12rem;
+    weight: 12rem;
+    transition: all 0.3s ease-in-out;
+  }
+  .fibLFSR:hover {
+    transform: scale(1.1);
+  }
+  .hangman {
+    float: right;
+    margin-left: 5%;
+    height: 12rem;
+    weight: 12rem;
+    transition: all 0.3s ease-in-out;
+  }
+  .hangman:hover {
+    transform: scale(1.1);
+  }
+  .triangle {
+    float: left;
+    margin-right: 5%;
+    height: 12rem;
+    weight: 12rem;
+    transition: all 0.3s ease-in-out;
+  }
+  .triangle:hover {
+    transform: scale(1.1);
+  }
+  .ants {
+    float: right;
+    margin-left: 5%;
+    height: 12rem;
+    weight: 12rem;
+    transition: all 0.3s ease-in-out;
+  }
+  .ants:hover {
+    transform: scale(1.1);
+  }
+  .skill-row {
+    width: 100%;
+    margin-bottom: 10rem;
+    line-height: 2;
+    color:white;
+  }
+  .middle-container{
+    color:white;
+  }
