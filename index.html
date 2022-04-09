@@ -1,47 +1,62 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Nuno Mestre</title>
-    <link rel="icon" href="favicon.ico">
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Nuno Mestre</title>
+  <!-- Magic Line from video 82 comments that makes rendering size work as expected -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <!-- My CSS -->
+    <link rel="stylesheet" href="styles.css">
+  <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Architects+Daughter&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <a class="navbar-brand" href="">Nuno Mestre</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="projects.html">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="skills.html">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <section id="title">
+    <div class="container-fluid">
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="index.html">Nuno Mestre</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="skills.html">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Title -->
+      <div class="row">
+        <div class="feature-box col-lg-4 col-med-12">
+          <img class="profile-pic" src="Images/selfie.png" width="250rem" height="250rem" alt="The greatest selfie alive">
+        </div>
+        <div class="feature-box col-lg-4 col-med-12">
+          <a href="https://github.com/nunommestre"><img class="Github" src="Images/Github.png" width="250rem" height="250rem" alt="Github logo"></a>
+        </div>
+        <div class="feature-box col-lg-4 col-med-12">
+          <a href="https://www.linkedin.com/in/nuno-mestre-8b5951151/"><img class="LinkedIn" src="Images/LinkedIn.png" width="250rem" height="250rem" alt="LinkedIn Logo"></a>
+        </div>
       </div>
-    </nav>
-    <div class="top-container">
-      <a href="https://github.com/nunommestre"><img class="Github" src="Images/Github.png" width="250rem" height="250rem" alt="Github logo"></a>
-      <a href="https://www.linkedin.com/in/nuno-mestre-8b5951151/"><img class="LinkedIn" src="Images/LinkedIn.png" width="250rem" height="250rem" alt="LinkedIn Logo"></a>
-      <img class="profile-pic" src="Images/selfie.png" width="250rem" height="250rem" alt="The greatest selfie aliv">
-      <a class="btn" href="mailto:nuno_mestre@student.uml.edu"><button onclick="contact.html">
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span> CONTACT
-</button></a>
-      <h1 class="name">Software Developer</h1>
-      <h2 class="summary">Computer Science Student at The University of Massachusetts Lowell</h2>
-      <p class="footer">© Nuno Mestre.</p>
     </div>
+  </section>
+</body>
+
 </html>
