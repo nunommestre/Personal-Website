@@ -113,13 +113,7 @@ p {
   text-align: center;
   color: white;
   background-color: blue;
-  background: rgb(1, 23, 4);
-  background: linear-gradient(
-    90deg,
-    rgba(1, 23, 4, 1) 0%,
-    rgb(3, 49, 10) 49%,
-    rgb(18, 3, 59) 100%
-  );
+  background: rgb(16, 172, 215);
   animation: gradientBG 15s ease infinite;
   background-size: 400% 400%;
   height: 100vh;
@@ -127,10 +121,15 @@ p {
   color: white;
 }
 .carousel-item {
-  padding: 7% 15%;
+  padding: 0% 15%;
 }
 .testimonial-image {
-  width: 15%;
+  width: 35%;
+}
+@media (max-width:750px) {
+  .testimonial-image {
+    width: 75%;
+  }
 }
 /* Press Section */
 #press {
@@ -141,14 +140,7 @@ p {
   width: 15%;
   margin: 2% 2% 10%;
 }
-/* Pricing Section */
-#pricing {
-  padding: 5%;
-  text-align: center;
-}
-.pricing-column {
-  padding: 3% 2%;
-}
+
 #projects {
   background-color: blue;
   background: rgb(1, 23, 4);
