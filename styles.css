@@ -1,0 +1,241 @@
+body {
+  font-family: "Montserrat";
+}
+#title {
+ background-color: blue;
+ background: rgb(1, 23, 4);
+ background: linear-gradient(
+   90deg,
+   rgba(1, 23, 4, 1) 0%,
+   rgb(3, 49, 10) 49%,
+   rgb(18, 3, 59) 100%
+ );
+ animation: gradientBG 50s ease infinite;
+ background: #161415 url(Images/Background.png) no-repeat top center;
+ background-size: 400% 400%;
+ color: white;
+}
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  1000% {
+    background-position: 0% 50%;
+  }
+}
+.container-fluid {
+  padding: 3% 15%;
+}
+h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+h3 {
+  font-family: "Ubuntu";
+}
+p {
+  color: rgb(109, 107, 107);
+}
+/*Navigation Bar*/
+.navbar {
+  padding: 0 0 4.5rem;
+}
+.nav-item {
+  padding: 0 2rem;
+}
+.nav-link {
+  font-size: 1.2rem;
+  font-weight: "Montserrat-Light";
+}
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.profile-pic {
+  transition: all 0.3s ease-in-out;
+}
+.profile-pic:hover {
+  transform: scale(1.3);
+}
+.LinkedIn {
+  transition: all 0.3s ease-in-out;
+}
+.LinkedIn:hover {
+  transform: scale(1.3);
+}
+.Github {
+  transition: all 0.3s ease-in-out;
+}
+.Github:hover {
+  transform: scale(1.3);
+}
+/* Download Buttons*/
+.download-button {
+  margin: 5% 3% 5% 0%;
+}
+/* Dog Phone */
+.dog-phone {
+  width: 60%;
+  transform: rotate(25deg);
+}
+/* Feature Section */
+
+#features {
+  padding: 7% 15%;
+  background-color: azure;
+  position: relative;
+}
+.feature-box {
+  text-align: center;
+  padding: 3%;
+}
+.icons {
+  padding-bottom: 1rem;
+  color: #ef8172;
+}
+.icons:hover {
+  color: #ff4c68;
+}
+/* Testimonial Section */
+#testimonials {
+  text-align: center;
+  color: white;
+  background-color: blue;
+  background: rgb(1, 23, 4);
+  background: linear-gradient(
+    90deg,
+    rgba(1, 23, 4, 1) 0%,
+    rgb(3, 49, 10) 49%,
+    rgb(18, 3, 59) 100%
+  );
+  animation: gradientBG 15s ease infinite;
+  background-size: 400% 400%;
+  height: 100vh;
+  width: 100vw;
+  color: white;
+}
+.carousel-item {
+  padding: 7% 15%;
+}
+.testimonial-image {
+  width: 15%;
+}
+/* Press Section */
+#press {
+  text-align: center;
+  background-color: #ff4c68;
+}
+.press-logo {
+  width: 15%;
+  margin: 2% 2% 10%;
+}
+/* Pricing Section */
+#pricing {
+  padding: 5%;
+  text-align: center;
+}
+.pricing-column {
+  padding: 3% 2%;
+}
+#projects {
+  background-color: blue;
+  background: rgb(1, 23, 4);
+  background: linear-gradient(
+    90deg,
+    rgba(1, 23, 4, 1) 0%,
+    rgb(3, 49, 10) 49%,
+    rgb(18, 3, 59) 100%
+  );
+  animation: gradientBG 50s ease infinite;
+  background-size: 400% 400%;
+  color: white;
+  background: #161415 url(Images/Project_Background.png) no-repeat top center;
+}
+.projects {
+  margin-top: 0;
+}
+.nbody {
+  float: left;
+  margin-right: 5%;
+  height: 12rem;
+  weight: 12rem;
+  transition: all 0.3s ease-in-out;
+}
+.nbody:hover {
+  transform: scale(1.1);
+}
+.guitar {
+  float: right;
+  margin-left: 5%;
+  height: 12rem;
+  weight: 12rem;
+  transition: all 0.3s ease-in-out;
+}
+.guitar:hover {
+  transform: scale(1.1);
+}
+.fibLFSR {
+  float: left;
+  margin-right: 5%;
+  height: 12rem;
+  weight: 12rem;
+  transition: all 0.3s ease-in-out;
+}
+.fibLFSR:hover {
+  transform: scale(1.1);
+}
+.hangman {
+  float: right;
+  margin-left: 5%;
+  height: 12rem;
+  weight: 12rem;
+  transition: all 0.3s ease-in-out;
+}
+.hangman:hover {
+  transform: scale(1.1);
+}
+.triangle {
+  float: left;
+  margin-right: 5%;
+  height: 12rem;
+  weight: 12rem;
+  transition: all 0.3s ease-in-out;
+}
+.triangle:hover {
+  transform: scale(1.1);
+}
+.ants {
+  float: right;
+  margin-left: 5%;
+  height: 12rem;
+  weight: 12rem;
+  transition: all 0.3s ease-in-out;
+}
+.ants:hover {
+  transform: scale(1.1);
+}
+.skill-row {
+  width: 100%;
+  margin-bottom: 10rem;
+  line-height: 2;
+  color: white;
+}
+.middle-container {
+  color: white;
+}
+.contact {
+  background-color: orange;
+  color: white;
+}
