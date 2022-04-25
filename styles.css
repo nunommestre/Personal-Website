@@ -45,7 +45,7 @@ h3 {
   font-family: "Ubuntu";
 }
 p {
-  color: rgb(109, 107, 107);
+  color: white;
 }
 /*Navigation Bar*/
 .navbar {
@@ -164,6 +164,13 @@ p {
   height: 12rem;
   weight: 12rem;
   transition: all 0.3s ease-in-out;
+}
+@media (max-width:750px) {
+  .nbody {
+    height: 12rem;
+    weight: 12rem;
+    transition: all 0.3s ease-in-out;
+  }
 }
 .nbody:hover {
   transform: scale(1.1);
