@@ -8,6 +8,12 @@ body {
  background-size: 200% 200%;
  color: white;
 }
+@media (min-width:1250px) {
+  #title {
+    height: 100vh;
+    width: 100vw;
+  }
+}
 @keyframes gradientBG {
   0% {
     background-position: 0% 50%;
@@ -97,27 +103,23 @@ p {
 .testimonial-image {
   width: 35%;
 }
-@media (max-width:750px) {
+@media (max-width: 750px) {
   .testimonial-image {
     width: 75%;
   }
 }
-/* Press Section */
-#press {
-  text-align: center;
-  background-color: #ff4c68;
-}
-.press-logo {
-  width: 15%;
-  margin: 2% 2% 10%;
-}
+
 
 #projects {
   background: rgb(1, 23, 4);
-  animation: gradientBG 50s ease infinite;
   background-size: 100% 100%;
   color: white;
   background: #161415 url(Images/Project_Background.png) repeat top center;
+}
+@media (min-width: 1000px){
+  #projects{
+    animation: gradientBG 50s ease infinite;
+  }
 }
 .projects {
   margin-top: 0;
